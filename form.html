@@ -1,0 +1,25 @@
+<html>
+<html lang="en">
+<head>
+    <title>IRIS FLOWER PREDICTION </title>
+</head>
+<body>
+    <h1>IRIS FLOWER PREDICTION</h1>
+    <img src="static\irisflowers.jpg" alt="beautiful flower">
+    <form action="{{url_for('predict') }}" method="post">
+        <label for="sepal_length">Sepal Length:</label><br>
+        <input type="float" id="sepal_length" name="sepal_length"placeholder="Enter your sepal length "required><br><br>
+        
+        <label for="sepal_width">Sepal Width:</label><br>
+        <input type="float" id="sepal_width" name="sepal_width" placeholder="Enter your sepal width "required><br><br>
+        
+        <label for="petal_length">Petal Length:</label><br>
+        <input type="float" id="petal_length" name="petal_length"placeholder="Enter your petal length "required><br><br>
+        
+        <label for="petal_width">Petal Width:</label><br>
+        <input type="float" id="petal_width" name="petal_width"placeholder="Enter your petal width "required><br><br>
+        
+        <button type="submit">predict</Button>
+    </form>
+</body>
+</html>
